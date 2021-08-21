@@ -18,14 +18,14 @@ $curl = curl_init();
 $client = array();
 
 $client["grant_type"] = "client_credentials";
-$client["client_id"] = "fx0s2c526svqkkwtu888tqcb";
-$client["client_secret"] = "CQc950fp6iCL3wLEsdr5D6GE";
-$client["account_id"] = "514000019";
+$client["client_id"] = "pgkn5hodxp2uvph6fwoepaef";
+$client["client_secret"] = "6vqNqS7Vj7oXhIJ7Hddlyexq";
+$client["account_id"] = "xxxxxx";
 
 $client_json = json_encode($client);
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://mc4-hknyn7v0c6l-tylstlz3rfcy.auth.marketingcloudapis.com/v2/token",
+  CURLOPT_URL => "https://mcchd80-7hzv0ybjvy85cmy4zhbm.auth.marketingcloudapis.com",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -70,7 +70,7 @@ $accessToken = $resp->access_token;
     $curl_get = curl_init();
     
     curl_setopt_array($curl_get, array(
-      CURLOPT_URL => "https://mc4-hknyn7v0c6l-tylstlz3rfcy.rest.marketingcloudapis.com/interaction/v1/events",
+      CURLOPT_URL => "https://mcchd80-7hzv0ybjvy85cmy4zhbm.rest.marketingcloudapis.com/interaction/v1/events",
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_ENCODING => "",
       CURLOPT_MAXREDIRS => 10,
